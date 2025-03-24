@@ -32,6 +32,14 @@
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
 
+% I have reviewed your resume and have some suggestions:
+% Kindly use only one font type for your resume and try not to use too many font size within the one page
+% Do not use italics for the sentence, use normal font to make it more ease for eyes
+% Education should be 1st section as it is the most current activity
+% It should be Work Experience and location in not necessary if it is completed in Singapore
+% 
+% Please make the necessary change and email me directly by this weekend 23 Mar for final review.
+% 
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -72,21 +80,21 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textnormal{\small#3} & \textnormal{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textnormal{\small#1} & \textnormal{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small#1 & \textnormal{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -118,14 +126,24 @@
     \href{https://github.com/keeve101}{\underline{github.com/keeve101}}
 \end{center}
 
-
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Singapore University of Technology and Design}{}
+      {Bachelor of Engineering in Computer Science and Design}{Sep. 2021 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{4.58/5.0 GPA}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {AI Engineer}{Jan. 2024  -- Jul. 2024}
-      {Hyundai Motor Group Innovation Center Singapore (HMGICS)}{Singapore}
+      {Hyundai Motor Group Innovation Center Singapore (HMGICS)}{}
       \resumeItemListStart
         \resumeItem{Developed a novel chat message disentanglement pipeline using LLMs for efficient annotation}
         \resumeItem{Implemented a Retrieval-Augmented Generation (RAG) system for domain-specific Question-Answering (QA), including data pre-processing, vector database integration, and evaluation}
@@ -133,7 +151,7 @@
 
     \resumeSubheading
       {Undergraduate Teaching Assistant}{Sep. 2022  -- Dec. 2022}
-      {Singapore University of Technology and Design}{Singapore}
+      {Singapore University of Technology and Design}{}
       \resumeItemListStart
         \resumeItem{Crafted fundamental programming questions in Python to facilitate understanding of Computer Science concepts}
         \resumeItem{Collaborated with course instructor to provide support to students, offering one-on-one assistance and explanations}
@@ -157,13 +175,13 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{LLMContextViz} $|$ \emph{Python, Explanability, Visualization, User Studies}}{Feb. 2024 -- Dec. 2024}
+          {\textbf{LLMContextViz} $|$ Python, Explanability, Visualization, User Studies}{Feb. 2024 -- Dec. 2024}
           \resumeItemListStart
             \resumeItem{Investigating LLM context windows and the challenges of context overflow on model performance}
             \resumeItem{Conducting user studies to understand how users interact with LLM context windows in common use cases}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Personal LLM Chat Application} $|$ \emph{Python, C++, QLoRA}}{Oct. 2023 -- Nov. 2023}
+          {\textbf{Personal LLM Chat Application} $|$ Python, C++, QLoRA}{Oct. 2023 -- Nov. 2023}
           \resumeItemListStart
             \resumeItem{Developed generative AI application utilizing a finetuned LLM to perform basic personal introduction and have short conversations}
             \resumeItem{Finetuned a quantized 7B parameter large-language model using quantized LoRA finetuning approach}
@@ -171,7 +189,7 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{IoT Air Conditioner Controller System} $|$ \emph{Java, C, Android Studio, Arduino API}}{Jan. 2023 -- Apr. 2023}
+          {\textbf{IoT Air Conditioner Controller System} $|$ Java, C, Android Studio, Arduino API}{Jan. 2023 -- Apr. 2023}
           \resumeItemListStart
             \resumeItem{Worked in a team to develop an app to allow users to control their air conditioners remotely}
             \resumeItem{Utilized Java, Android Studio to develop the app with Firebase database backend, C for bridging MCU}
@@ -179,14 +197,14 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Food Security Indicator Estimator Model} $|$ \emph{Python, NumPy, Matplotlib, Git}}{Sep. 2022 -- Dec. 2022}
+          {\textbf{Food Security Indicator Estimator Model} $|$ Python, NumPy, Matplotlib, Git}{Sep. 2022 -- Dec. 2022}
           \resumeItemListStart
             \resumeItem{Developed a food security indicator estimator linear regression model to provide a low-cost early estimator of food security across nations based on the Global Food Security Index}
             \resumeItem{Achieved Best Project for the term's multi-disciplinary design challenge}
           \resumeItemListEnd
           
           \resumeProjectHeading
-          {\textbf{Image Processing for Bluetooth Thermal Printer} $|$ \emph{C, Arduino API}}{Jan. 2022 -- Apr. 2022}
+          {\textbf{Image Processing for Bluetooth Thermal Printer} $|$ C, Arduino API}{Jan. 2022 -- Apr. 2022}
           \resumeItemListStart
             \resumeItem{Implemented image processing algorithm to decode snapshots captured from microcontroller, conversion into dithered formats for print through Bluetooth thermal printer}
           \resumeItemListEnd
@@ -194,31 +212,18 @@
     \resumeSubHeadingListEnd
 
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Singapore University of Technology and Design}{Singapore}
-      {Bachelor of Engineering in Computer Science and Design}{Sep. 2021 -- May 2025}
-      \resumeItemListStart
-        \resumeItem{4.58/5.0 GPA}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
-
-%
 %-----------EXTRA-CURRICULARS-----------
 \section{Extra-Curricular Activities}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Climbers Club President }{Jan. 2022  -- Jan. 2023}
-      {Singapore University of Technology and Design}{Singapore}
+      {Singapore University of Technology and Design}{}
       \resumeItemListStart
         \resumeItem{Led committee planning and climbing activities, directed club-related activities in school-wide events}
       \resumeItemListEnd
     \resumeSubheading
       {Rotaract Club Member}{Nov. 2021  -- Aug. 2022}
-      {Singapore University of Technology and Design}{Singapore}
+      {Singapore University of Technology and Design}{}
       \resumeItemListStart
         \resumeItem{Served as an educational mentor through YEAH! program, volunteering to teach and offer free tuition to underprivileged primary school children at local community center}
       \resumeItemListEnd
