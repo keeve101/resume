@@ -32,15 +32,6 @@
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
 
-% I have reviewed your resume and have some suggestions:
-% Kindly use only one font type for your resume and try not to use too many font size within the one page
-% Do not use italics for the sentence, use normal font to make it more ease for eyes
-% Education should be 1st section as it is the most current activity
-% It should be Work Experience and location in not necessary if it is completed in Singapore
-% 
-% Please make the necessary change and email me directly by this weekend 23 Mar for final review.
-% 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -110,7 +101,6 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
@@ -131,9 +121,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Singapore University of Technology and Design}{}
-      {Bachelor of Engineering in Computer Science and Design}{Sep. 2021 -- May 2025}
+      {Bachelor of Engineering in Computer Science and Design $|$ GPA: 4.53/5.00}{Sep. 2021 -- May 2025}
       \resumeItemListStart
-        \resumeItem{4.58/5.0 GPA}
+        \resumeItem{Relevant Coursework: Elements of Software Construction, Algorithms, Machine Learning, User Interfaces, Databases, Computer Vision, Natural Language Processing}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 %
@@ -145,72 +135,43 @@
       {AI Engineer}{Jan. 2024  -- Jul. 2024}
       {Hyundai Motor Group Innovation Center Singapore (HMGICS)}{}
       \resumeItemListStart
-        \resumeItem{Developed a novel chat message disentanglement pipeline using LLMs for efficient annotation}
         \resumeItem{Implemented a Retrieval-Augmented Generation (RAG) system for domain-specific Question-Answering (QA), including data pre-processing, vector database integration, and evaluation}
+        \resumeItem{Developed a chat message disentanglement pipeline using LLMs for efficient annotation}
       \resumeItemListEnd
-
-    \resumeSubheading
-      {Undergraduate Teaching Assistant}{Sep. 2022  -- Dec. 2022}
-      {Singapore University of Technology and Design}{}
-      \resumeItemListStart
-        \resumeItem{Crafted fundamental programming questions in Python to facilitate understanding of Computer Science concepts}
-        \resumeItem{Collaborated with course instructor to provide support to students, offering one-on-one assistance and explanations}
-      \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-
   \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+    
       \resumeProjectHeading
-          {\textbf{LLMContextViz} $|$ Python, Explanability, Visualization, User Studies}{Feb. 2024 -- Dec. 2024}
+          {\textbf{CrossTalk Secure} --- Offline Speech Translation Device $|$ PyTorch, HuggingFace}{Jan. 2025 -- May 2025}
           \resumeItemListStart
-            \resumeItem{Investigating LLM context windows and the challenges of context overflow on model performance}
-            \resumeItem{Conducting user studies to understand how users interact with LLM context windows in common use cases}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Personal LLM Chat Application} $|$ Python, C++, QLoRA}{Oct. 2023 -- Nov. 2023}
-          \resumeItemListStart
-            \resumeItem{Developed generative AI application utilizing a finetuned LLM to perform basic personal introduction and have short conversations}
-            \resumeItem{Finetuned a quantized 7B parameter large-language model using quantized LoRA finetuning approach}
-            \resumeItem{Created and utilized Python bindings to C++ low-level API given by llama.cpp library to run inferences locally}
+            \resumeItem{Built and evaluated full ML pipeline for offline transcription and translation, including data procurement, model training, and inference}
+            \resumeItem{Improved translation quality and response speed to enable secure, low-latency translations with SEA context}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{IoT Air Conditioner Controller System} $|$ Java, C, Android Studio, Arduino API}{Jan. 2023 -- Apr. 2023}
+          {\textbf{WhisperEMMA} --- Real-Time Speech Recognition $|$ PyTorch, Whisper, HuggingFace}{Jan. 2025 -- Apr. 2025}
           \resumeItemListStart
-            \resumeItem{Worked in a team to develop an app to allow users to control their air conditioners remotely}
-            \resumeItem{Utilized Java, Android Studio to develop the app with Firebase database backend, C for bridging MCU}
-            \resumeItem{Awarded SUTD x Singtel Merit Award for the project}
+            \resumeItem{Redesigned Whisper's model architecture to support real-time transcription, performed finetuning and inference}
+            \resumeItem{Improved transcription quality and responsiveness compared to existing baselines, demonstrated strong quality-latency trade-offs}
+          \resumeItemListEnd
+    
+      \resumeProjectHeading
+          {\textbf{LLMContextViz} --- LLM HCI Research $|$ Python, Explanability, Visualization, User Studies}{Feb. 2024 -- Dec. 2024}
+          \resumeItemListStart
+            \resumeItem{Explored LLM context windows and the challenges of context overflow on model performance}
+            \resumeItem{Designed user studies to understand real-world interactions with LLMs under constrained context settings}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Food Security Indicator Estimator Model} $|$ Python, NumPy, Matplotlib, Git}{Sep. 2022 -- Dec. 2022}
+          {\textbf{ACcess} --- IoT Air Conditioner Controller System $|$ Java, C, Android Studio, Arduino}{Jan. 2023 -- Apr. 2023}
           \resumeItemListStart
-            \resumeItem{Developed a food security indicator estimator linear regression model to provide a low-cost early estimator of food security across nations based on the Global Food Security Index}
-            \resumeItem{Achieved Best Project for the term's multi-disciplinary design challenge}
+            \resumeItem{Developed a mobile app paired with an IoT device to turn traditional air conditioners smart}
+            \resumeItem{Enabled users to schedule AC activity, set temperature defaults and control devices remotely at low cost}
           \resumeItemListEnd
-          
-          \resumeProjectHeading
-          {\textbf{Image Processing for Bluetooth Thermal Printer} $|$ C, Arduino API}{Jan. 2022 -- Apr. 2022}
-          \resumeItemListStart
-            \resumeItem{Implemented image processing algorithm to decode snapshots captured from microcontroller, conversion into dithered formats for print through Bluetooth thermal printer}
-          \resumeItemListEnd
-
     \resumeSubHeadingListEnd
-
 
 %-----------EXTRA-CURRICULARS-----------
 \section{Extra-Curricular Activities}
@@ -221,12 +182,6 @@
       \resumeItemListStart
         \resumeItem{Led committee planning and climbing activities, directed club-related activities in school-wide events}
       \resumeItemListEnd
-    \resumeSubheading
-      {Rotaract Club Member}{Nov. 2021  -- Aug. 2022}
-      {Singapore University of Technology and Design}{}
-      \resumeItemListStart
-        \resumeItem{Served as an educational mentor through YEAH! program, volunteering to teach and offer free tuition to underprivileged primary school children at local community center}
-      \resumeItemListEnd
   \resumeSubHeadingListEnd
 %
 
@@ -235,12 +190,11 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Java, Python, C/C++, SQL, JavaScript/TypeScript, HTML/CSS} \\
-     \textbf{Frameworks}{: React, Node.js, Vite.js, Express.js} \\
+     \textbf{Frameworks}{: PyTorch, React, Node.js, Vite.js, Express.js} \\
      \textbf{Tools}{: Git, GitHub, VS Code, Android Studio, Agile, MongoDB} \\
-     \textbf{Libraries}{: pandas, NumPy, Matplotlib, ctypes, PyTorch, Transformers, PEFT}
+     \textbf{Libraries}{: HuggingFace, LangChain, LlamaIndex, pandas, NumPy, Matplotlib, ctypes, Transformers, PEFT}
     }}
  \end{itemize}
-
 
 %-------------------------------------------
 \end{document}
